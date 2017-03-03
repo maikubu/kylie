@@ -1,0 +1,208 @@
+@import "bourbon"
+@import "vars"
+
+	
+html, body
+	margin: 0
+	padding: 0
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	line-height: 1.6
+	font-family: $roboto
+	overflow-x: hidden
+	color: $default-color
+	background-color: #fff
+	
+.ishome, .isnohome
+	min-width: 320px
+
+.main_container
+	min-height: 100%
+	padding-bottom: 170px
+	position: relative
+
+.hidden
+	display: none
+a
+	outline: none!important
+	color: $default-color
+	transition: all .5s ease
+	&:hover
+		text-decoration: none
+		color: $accent-color
+	&:active,
+	&:focus
+		text-decoration: none
+		color: darken($accent-color, 10%)
+		
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+		
+h1, h2, h2, h3, h4, h5, h6, .button, button, .h1, .h2, .h3, .h4, .h5, .h6
+	text-transform: uppercase
+	font-family: $robotocond
+	font-weight: 700
+	margin: 0
+	padding: 0
+
+button
+	background-color: rgba(0,0,0,0)
+	border: none
+	
+.button, button
+	transition: transform .5s ease .4s, opacity .5s ease .4s, color .5s ease
+	display: block
+	font-size: em(26px)
+	text-align: center
+	color: $default-color
+	&:hover
+		color: $accent-color
+	&:active
+		color: darken($accent-color, 10%)
+		
+		
+.light-w
+	font-weight: 400
+	
+	
+//_______INPUT-NUMBER_____
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+	-webkit-appearance: none
+	margin: 0
+
+input[type=number]
+	-moz-appearance: textfield
+	
+.input-wrap, .quantity
+	
+	border-radius: 3px
+	&:hover
+		input, textarea
+			box-shadow: 0 2px 2px rgba(0,0,0,.1), 0 0 8px rgba(0,0,0,.16)
+
+input, textarea
+	box-shadow: 0 2px 2px rgba(0,0,0,.1)
+	transition: box-shadow .5s cubic-bezier(0.4, 0.0, 0.2, 1)
+	padding: 5px
+	border: none
+	text-align: center
+	font-family: $robotocond
+	font-weight: 700
+	&:focus
+		box-shadow: 0 2px 2px rgba(0,0,0,.1), 0 0 8px rgba(0,0,0,.16)
+		outline: 0
+		
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	box-shadow: 0 2px 2px rgba(255,0,0,.3)
+	
+body input:required:valid,
+body textarea:required:valid
+
+	box-shadow: 0 2px 2px rgba(0,255,0,.3)
+	
+	
+
+.quantity
+	position: relative
+	font-size: em(24px)
+	border: 1px solid #eee
+	
+.quantity input
+	margin: 0
+	width: 100%
+	padding: 5px 25%
+
+.quantity-button
+	transition: box-shadow .3s cubic-bezier(0.4, 0.0, 0.2, 1)
+				
+	&:hover
+		box-shadow: 0 0 5px rgba(0,0,0,.16)
+		.fa
+			opacity: .8
+	&:active
+		box-shadow: inset 0 0 3px rgba(0,0,0,.12)
+		.fa
+			opacity: 1
+	position: absolute
+	top: 0
+	width: 25%
+	padding: 5px 0
+	cursor: pointer
+	text-align: center
+	border-radius: 2px
+	user-select: none
+	.fa
+		transition: opacity .3s cubic-bezier(0.4, 0.0, 0.2, 1)
+		font-size: 16px
+		vertical-align: middle
+.quantity-down
+	left: 0
+	border-right: 1px solid #eee
+.quantity-up
+	right: 0
+	border-left: 1px solid #eee
+	
+//_______MFP____
+button.mfp-close
+	font-size: 50px
+	transition: opacity .5s ease
+	right: 8.33333333%
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog 
+	opacity: 0
+	transition: all 0.2s ease-out
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg )
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog 
+	opacity: 1
+	transform: translateY(0) perspective( 600px ) rotateX( 0 )
+
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog 
+	opacity: 0
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg )
+
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg 
+	opacity: 0
+	transition: opacity 0.3s ease-out
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg 
+	opacity: 0.8
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg 
+	opacity: 0
+
+
+	
+	
+	
+

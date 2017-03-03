@@ -1,0 +1,175 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens MD*/
+@media only screen and (max-width : 1199px)
+  .card-popup
+    &_slider
+      &-prev, &-next
+        padding: 35px 10px
+    &_name, &_quantity, &_buy
+      margin-top: 30px
+    &_price, &_descr
+      margin:
+        top: 15px
+        bottom: 15px
+   
+      
+  .main_nav
+    &-item
+      &::after
+        width: 31%
+	  
+  .main_cart
+    &_link
+      &::before
+        margin-right: 5px
+      &::after
+        margin-left: 5px
+  
+  /**/
+
+/* Medium Devices, Desktops SM*/
+@media only screen and (max-width : 991px)
+  
+  .main_header
+    margin-bottom: 30px
+    
+  .main_name
+    text-align: center
+    &-logo
+      margin-right: 0
+      
+  .contacts
+    padding-top: 90px
+    &_name
+      &::after
+        width: 30%
+        
+  .main_nav
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 80%,rgba(255,255,255,0) 100%)
+    padding-top: 0
+    padding-bottom: 15px
+    &-list
+      display: none
+      width: 50%
+      padding:
+        left: 50px
+        bottom: 45px
+    &-item
+      &:hover
+        background-color: rgba(#fff, .3)
+      
+      
+  .main_cart
+    margin-top: 0
+    position: absolute
+    top: 0
+    right: 15px
+    width: 30%
+    &_link
+      text-align: right
+      
+  .main_slider
+    margin-top: 0
+    
+  button.mfp-close
+    right: 0
+    
+  .card-popup
+    &_name, &_buy, &_thumb_slider
+      margin-top: 15px
+    &_price, &_descr
+      margin:
+        top: 10px
+        bottom: 10px
+    &_quantity
+      margin-top: 20px
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  /**/
+
+
+/* Small Devices, Tablets XS*/
+@media only screen and (max-width : 767px)
+  
+  
+  
+  
+  
+  
+  /*Disable Animation on Mobile Devices*/
+  .animated
+    /*CSS transitions*/
+    -o-transition-property: none !important
+    -moz-transition-property: none !important
+    -ms-transition-property: none !important
+    -webkit-transition-property: none !important
+    transition-property: none !important
+    /*CSS transforms*/
+    -o-transform: none !important
+    -moz-transform: none !important
+    -ms-transform: none !important
+    -webkit-transform: none !important
+    transform: none !important
+    /*CSS animations*/
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
+  
+  
+  
+  
+  
+  
+	
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+    
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
